@@ -8,11 +8,11 @@ const { v4: uuidv4 } = require("uuid");
 app.use(express.static("public"));
 //create a route to go to the notes html page and the main page
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, ".public/index.html"));
+  res.sendFile(path.join(__dirname, "./public/index.html"));
 });
 
 app.get("/notes", (req, res) => {
-  res.sendFile(path.join(__dirname, ".public/notes.html"));
+  res.sendFile(path.join(__dirname, "./public/notes.html"));
 });
 //create a get route
 app.get("/api/notes", (req, res) => {
